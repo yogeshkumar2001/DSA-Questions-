@@ -1,0 +1,41 @@
+import java.util.*;
+
+public class Main {
+    // example= input=>abcabcbb ==> output=> the asnwer is "abc" with the length of
+    // 3
+
+    public static boolean sPresent(char ch1, String s) {
+        boolean isPresnt = false;
+        for (int i = 0; i < s.length(); i++) {
+            char sch = s.charAt(i);
+            if (sch == ch1) {
+                isPresnt = true;
+                break;
+            }
+        }
+        return isPresnt;
+    }
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        String str = scn.nextLine();
+
+        // System.out.println(str);
+        String s = "";
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            9999999                                                                                                                                                                                                                                                                                                                                                                                         
+            char ch1 = str.charAt(i);
+            boolean isPresent = sPresent(ch1, s);
+            islastIndex = lastIndex(ch1 ,)
+            if (isPresent == false) {
+                count++;
+                s += ch1;
+            }
+
+        }
+        System.out.println(s);
+        System.out.println(count);
+    }
+
+}
